@@ -1,13 +1,136 @@
 body {
-    font-family: 'Roboto';
+    margin: 0;
 }
 
-footer, header {
+body * {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+footer,
+header {
     background-color: #1F2937;
+    padding: 2em 10%
 }
 
 #header_main h2 {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
+}
+
+header li, header p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+header h6 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+button,
+#call_to_action {
+    background-color: #3882F6;
+}
+
+#some_random_information h2 {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#inspiring_quote {
+    background-color: #E5E7EB;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: light;
+    color: #1F2937;
+}
+
+#header_main > * {
+    margin: 5em 0;
+    max-width: 40%;
+    max-height: 300px;
+}
+
+#header_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#some_random_information > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+}
+
+#top ol {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+button {
+    border-radius: 5px;
+    border-width: 0;
+    width: 6em;
+    height: 2em;
+    color: #F9FAF8;
+    margin-top: 0.5em;
+    font-size: 18px;
+}
+
+#some_random_information > div > div > * {
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+}
+
+#some_random_information img {
+    border-radius: 8px;
+}
+
+#some_random_information h2 {
+    margin: 50px 0px;
+    text-align: center;
+}
+
+#inspiring_quote {
+    padding: 4em 20%;
+    font-weight: lighter;
+}
+
+#quote_source {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 1.5em;
+}
+
+#call_to_action {
+    margin: 6em 20%;
+    padding: 2em 5em;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#call_to_action * {
+    color: #E5E7EB;
+}
+
+#call_to_action button {
+    border-color: #E5E7EB;
+    border-width: 2px;
+}
+
+footer p {
+    text-align: center;
+    color: #E5E7EB;
 }
